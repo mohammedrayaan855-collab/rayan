@@ -1,209 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Rayan | Portfolio</title>
+    <title>Rayan Portfolio</title>
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Poppins', sans-serif;
         }
 
-        body {
-            background: linear-gradient(135deg, #e0f2fe, #f5f3ff);
-            color: #222;
+        body{
+            background: linear-gradient(135deg,#667eea,#764ba2);
+            color:white;
         }
 
-        nav {
-            background-color: #1e3a8a;
-            color: white;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .container{
+            width:90%;
+            margin:auto;
         }
 
-        nav h2 {
-            font-size: 26px;
+        header{
+            padding:30px 0;
+            text-align:center;
         }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: bold;
+        header h1{
+            font-size:45px;
+            color:#fff;
         }
 
-        nav a:hover {
-            color: #facc15;
+        header p{
+            font-size:20px;
         }
 
-        .hero {
-            min-height: 85vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 30px;
+        .card{
+            background:white;
+            color:#333;
+            width:70%;
+            margin:30px auto;
+            padding:30px;
+            border-radius:20px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.3);
+            text-align:center;
         }
 
-        .hero-content {
-            background: white;
-            padding: 50px;
-            max-width: 750px;
-            border-radius: 25px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        .profile{
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            background:#667eea;
+            margin:auto;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-size:45px;
+            color:white;
+            font-weight:bold;
         }
 
-        .profile {
-            width: 130px;
-            height: 130px;
-            border-radius: 50%;
-            background-color: #2563eb;
-            color: white;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 55px;
-            font-weight: bold;
+        h2{
+            color:#764ba2;
+            margin:15px;
         }
 
-        h1 {
-            font-size: 45px;
-            margin-top: 20px;
-            color: #1e3a8a;
+        .skills{
+            display:flex;
+            justify-content:center;
+            gap:15px;
+            flex-wrap:wrap;
         }
 
-        .course {
-            font-size: 22px;
-            margin: 15px;
-            color: #555;
+        .skill{
+            background:#667eea;
+            color:white;
+            padding:10px 20px;
+            border-radius:20px;
         }
 
-        .about {
-            font-size: 18px;
-            line-height: 1.7;
-            margin-top: 20px;
+        .button{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 25px;
+            background:#764ba2;
+            color:white;
+            text-decoration:none;
+            border-radius:25px;
         }
 
-        .skills {
-            padding: 60px 10%;
-            text-align: center;
-            background-color: white;
+        footer{
+            text-align:center;
+            padding:20px;
         }
 
-        .skills h2 {
-            font-size: 32px;
-            color: #1e3a8a;
-            margin-bottom: 30px;
-        }
-
-        .skill-box {
-            display: inline-block;
-            background: #dbeafe;
-            padding: 25px;
-            margin: 12px;
-            width: 240px;
-            border-radius: 15px;
-            font-size: 19px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .skill-box:hover {
-            transform: translateY(-8px);
-            background: #2563eb;
-            color: white;
-        }
-
-        footer {
-            background-color: #1e3a8a;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        @media(max-width: 600px) {
-            nav {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            h1 {
-                font-size: 35px;
-            }
-
-            .hero-content {
-                padding: 30px 20px;
-            }
-        }
     </style>
+
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <h2>Rayan Portfolio</h2>
+<div class="container">
 
-        <div>
-            <a href="#home">Home</a>
-            <a href="#skills">Skills</a>
-        </div>
-    </nav>
+<header>
+    <h1>Rayan Portfolio</h1>
+    <p>BCA Student | Future IT Professional</p>
+</header>
 
-    <!-- Home Section -->
-    <section class="hero" id="home">
 
-        <div class="hero-content">
+<div class="card">
 
-            <div class="profile">R</div>
+<div class="profile">
+R
+</div>
 
-            <h1>Hello, I'm Rayan 👋</h1>
+<h2>About Me</h2>
 
-            <p class="course">
-                BCA Student at GEMS Arts and Science College
-            </p>
+<p>
+Hello! I am <b>Rayan</b>, a BCA student at 
+<b>GEMS Arts and Science College</b>.
+I am passionate about technology, programming
+and learning new skills.
+</p>
 
-            <p class="about">
-                I am a passionate BCA student who enjoys learning
-                new technologies. I am proud to be a topper in my
-                studies and always work hard to achieve my goals.
-            </p>
 
-        </div>
+<h2>My Achievement</h2>
 
-    </section>
+<p>
+🏆 I am a topper in academics and always try
+to improve my knowledge and skills.
+</p>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
 
-        <h2>My Strengths</h2>
+<h2>My Skills</h2>
 
-        <div class="skill-box">
-            🏆 Academic Topper
-        </div>
+<div class="skills">
 
-        <div class="skill-box">
-            📚 Quick Learner
-        </div>
+<div class="skill">Programming</div>
+<div class="skill">Problem Solving</div>
+<div class="skill">Computer Knowledge</div>
+<div class="skill">Academic Excellence</div>
 
-        <div class="skill-box">
-            💻 BCA Student
-        </div>
+</div>
 
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Rayan | BCA Student</p>
-    </footer>
+<a href="#" class="button">
+Contact Me
+</a>
+
+
+</div>
+
+
+<footer>
+© 2026 Rayan | BCA Student Portfolio
+</footer>
+
+
+</div>
 
 </body>
 </html>
